@@ -67,12 +67,12 @@ def sum_of_natural_numbers(n):
 #  *****
 # *******
 def centered_star_pyramid(n):
-    length = 2*n - 1
+    length = 2 * n - 1
     pyramid = ""
 
     for count in range(n):
         for subcount in range(length):
-            if length//2 - count <= subcount <= length//2 + count :
+            if length // 2 - count <= subcount <= length // 2 + count :
                 pyramid += "*"
             elif subcount <= length//2 + count:
                 pyramid += " "
@@ -80,6 +80,3 @@ def centered_star_pyramid(n):
                     pyramid += "\n"
 
     return pyramid
-
-print(centered_star_pyramid(4))
-print()
